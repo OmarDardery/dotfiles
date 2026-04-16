@@ -1,0 +1,74 @@
+layout {
+    // Tightened gaps for a cleaner look
+    gaps 6
+    center-focused-column "never"
+    always-center-single-column
+    empty-workspace-above-first
+    default-column-display "tabbed"
+    background-color "transparent"
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    default-column-width { proportion 0.5; }
+
+    preset-window-heights {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    focus-ring {
+        on
+        width 1
+        // Darkened Moonlight Cyan (was #48cae4)
+        active-color "#1a5b69"
+        // Deep Night Navy (was #2c3e50)
+        inactive-color "#080d12"
+        // Deepened Magenta (was #b5179e)
+        urgent-color "#5e0b52"
+    }
+    
+	 
+    border {
+        on
+        width 1
+        // Darkened Ocean Blue (was #4a90e2)
+        active-color "#22466e"
+        // Almost Black Navy (was #1b2735)
+        inactive-color "#050a0f"
+        urgent-color "#5e0b52"
+    }
+
+    shadow {
+        on
+        softness 20
+        spread 3
+        offset x=0 y=3
+        draw-behind-window true
+        color "#00000070"
+    }
+
+    tab-indicator {
+        on
+        hide-when-single-tab
+        place-within-column
+        gap 4
+        width 2
+        length total-proportion=1.0
+        position "right"
+        gaps-between-tabs 2
+        corner-radius 4
+        active-color "#4a90e2"
+        inactive-color "#1b2735"
+        urgent-color "#b5179e"
+    }
+
+    insert-hint {
+        on
+        color "#48cae480"
+    }
+}
