@@ -5,7 +5,11 @@
   "showPeerCount": false,
   "hideDisconnected": false,
   "hideMullvadExitNodes": true,
-  "terminalCommand": "",
+  "terminalCommand": "kitty",
+  "sshUsername": "",
   "pingCount": 5,
-  "defaultPeerAction": "copy-ip"
+  "defaultPeerAction": "copy-ip",
+  "taildropEnabled": true,
+  "taildropDownloadDir": "~/Downloads",
+  "taildropReceiveMode": "operator"
 }

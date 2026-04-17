@@ -25,7 +25,8 @@
             "zen",
             "dev.zed.Zed",
             "code",
-            "app.zen_browser.zen"
+            "app.zen_browser.zen",
+            "heroic"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -323,7 +324,7 @@
     },
     "desktopWidgets": {
         "enabled": true,
-        "gridSnap": false,
+        "gridSnap": true,
         "gridSnapScale": false,
         "monitorWidgets": [
             {
@@ -347,11 +348,12 @@
                         "hideWhenIdle": false,
                         "id": "AudioVisualizer",
                         "roundedCorners": true,
-                        "showBackground": true,
+                        "scale": 1.5560916063815768,
+                        "showBackground": false,
                         "visualizerType": "linear",
                         "width": 320,
-                        "x": 120,
-                        "y": 280
+                        "x": 1173,
+                        "y": 851
                     }
                 ]
             }
@@ -676,8 +678,8 @@
         "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": true,
-        "settingsPanelMode": "attached",
-        "settingsPanelSideBarCardStyle": false,
+        "settingsPanelMode": "centered",
+        "settingsPanelSideBarCardStyle": true,
         "tooltipsEnabled": true,
         "translucentWidgets": true
     },
