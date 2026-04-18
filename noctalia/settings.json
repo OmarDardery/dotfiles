@@ -84,6 +84,9 @@
         "widgetSpacing": 6,
         "widgets": {
             "center": [
+                {
+                    "id": "plugin:slowbongo"
+                }
             ],
             "left": [
                 {
@@ -157,12 +160,21 @@
             ],
             "right": [
                 {
+                    "defaultSettings": {
+                        "hideBackground": false,
+                        "minimumThreshold": 10
+                    },
                     "id": "plugin:catwalk"
                 },
                 {
-                    "id": "plugin:mirror-mirror"
-                },
-                {
+                    "defaultSettings": {
+                        "autoStartBreaks": false,
+                        "autoStartWork": false,
+                        "longBreakDuration": 15,
+                        "sessionsBeforeLongBreak": 4,
+                        "shortBreakDuration": 5,
+                        "workDuration": 25
+                    },
                     "id": "plugin:pomodoro"
                 },
                 {
@@ -174,6 +186,18 @@
                     "unreadBadgeColor": "primary"
                 },
                 {
+                    "defaultSettings": {
+                        "autoHeight": true,
+                        "cheatsheetData": [
+                        ],
+                        "columnCount": 3,
+                        "detectedCompositor": "",
+                        "hyprlandConfigPath": "~/.config/hypr/hyprland.conf",
+                        "modKeyVariable": "$mod",
+                        "niriConfigPath": "~/.config/niri/config.kdl",
+                        "windowHeight": 0,
+                        "windowWidth": 1400
+                    },
                     "id": "plugin:keybind-cheatsheet"
                 },
                 {
@@ -186,6 +210,11 @@
                     "id": "Tray",
                     "pinned": [
                     ]
+                },
+                {
+                    "defaultSettings": {
+                    },
+                    "id": "plugin:mirror-mirror"
                 },
                 {
                     "deviceNativePath": "__default__",
@@ -672,7 +701,7 @@
         "fontFixed": "monospace",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 1,
-        "panelsAttachedToBar": true,
+        "panelsAttachedToBar": false,
         "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "centered",
         "settingsPanelSideBarCardStyle": true,
