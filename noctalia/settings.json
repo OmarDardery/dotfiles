@@ -19,14 +19,11 @@
         "overviewLayer": false,
         "pinnedApps": [
             "steam",
-            "vivaldi-stable",
             "winboat",
-            "code-oss",
-            "zen",
-            "dev.zed.Zed",
             "code",
-            "app.zen_browser.zen",
-            "heroic"
+            "heroic",
+            "dev.zed.Zed",
+            "app.zen_browser.zen"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -160,6 +157,26 @@
             ],
             "right": [
                 {
+                    "id": "plugin:catwalk"
+                },
+                {
+                    "id": "plugin:mirror-mirror"
+                },
+                {
+                    "id": "plugin:pomodoro"
+                },
+                {
+                    "hideWhenZero": false,
+                    "hideWhenZeroUnread": false,
+                    "iconColor": "none",
+                    "id": "NotificationHistory",
+                    "showUnreadBadge": true,
+                    "unreadBadgeColor": "primary"
+                },
+                {
+                    "id": "plugin:keybind-cheatsheet"
+                },
+                {
                     "blacklist": [
                     ],
                     "chevronColor": "none",
@@ -171,14 +188,6 @@
                     ]
                 },
                 {
-                    "hideWhenZero": false,
-                    "hideWhenZeroUnread": false,
-                    "iconColor": "none",
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true,
-                    "unreadBadgeColor": "primary"
-                },
-                {
                     "deviceNativePath": "__default__",
                     "displayMode": "graphic-clean",
                     "hideIfIdle": false,
@@ -186,20 +195,6 @@
                     "id": "Battery",
                     "showNoctaliaPerformance": false,
                     "showPowerProfiles": false
-                },
-                {
-                    "displayMode": "onhover",
-                    "iconColor": "none",
-                    "id": "Volume",
-                    "middleClickCommand": "pwvucontrol || pavucontrol",
-                    "textColor": "none"
-                },
-                {
-                    "applyToAllMonitors": false,
-                    "displayMode": "onhover",
-                    "iconColor": "none",
-                    "id": "Brightness",
-                    "textColor": "none"
                 },
                 {
                     "defaultSettings": {
@@ -277,7 +272,7 @@
                 "id": "audio-card"
             },
             {
-                "enabled": false,
+                "enabled": true,
                 "id": "brightness-card"
             },
             {
@@ -290,7 +285,7 @@
             }
         ],
         "diskPath": "/",
-        "position": "close_to_bar_button",
+        "position": "center",
         "shortcuts": {
             "left": [
                 {
@@ -341,7 +336,7 @@
                         "showBackground": false,
                         "useCustomFont": false,
                         "x": 46,
-                        "y": 46
+                        "y": 23
                     },
                     {
                         "colorName": "primary",
@@ -672,7 +667,7 @@
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "Adwaita Sans",
+        "fontDefault": "Noto Sans",
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,
@@ -686,7 +681,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/oad/Pictures/wallpapers",
+        "directory": "/home/oad/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [

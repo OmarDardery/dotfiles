@@ -8,7 +8,7 @@ input {
             // uncomment the line below and change the layout accordingly.
             layout "us,ara" // Use the American keyboard layout
             // Optional: standard XKB options like switching via Alt+Shift
-            options "grp:alt_shift_toggle,caps:escape"
+            options "grp:alt_shift_toggle"
         }
         numlock // Enable numlock on startup
     }
