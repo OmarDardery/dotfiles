@@ -1,1 +1,2 @@
 app.zen_browser.zen/x86_64/stable
+com.stremio.Stremio/x86_64/stable
