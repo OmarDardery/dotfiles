@@ -10,13 +10,18 @@ window-rule {
 
     // Transparency (needed for blur to show)
     opacity 0.92
+    background-effect {
+    	blur true
+    }
 }
 
 // Slightly more transparent terminals (looks nicer with blur)
 window-rule {
     match app-id="foot|kitty|alacritty"
     opacity 0.88
-    
+    background-effect {
+    	blur true
+    }
 }
 
 // Optional: make floating dialogs cleaner
@@ -24,6 +29,9 @@ window-rule {
     match title=".*(Open|Save|Settings|Preferences).*"
     geometry-corner-radius 16
     opacity 0.95
+    background-effect {
+    	blur true
+    }
 }
 
 // -------------------------
@@ -38,5 +46,4 @@ layer-rule {
 layer-rule {
     match namespace=".*"
     opacity 0.95
-    
 }
