@@ -23,7 +23,8 @@
             "code",
             "heroic",
             "dev.zed.Zed",
-            "app.zen_browser.zen"
+            "app.zen_browser.zen",
+            "apx-pikman-arch-linux-youtube-music"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -710,7 +711,7 @@
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 1,
+        "panelBackgroundOpacity": 0.91,
         "panelsAttachedToBar": false,
         "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "centered",
