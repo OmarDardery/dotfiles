@@ -1,30 +1,33 @@
 // -------------------------
 // WINDOW RULES
 // -------------------------
-window-rule {
-    match app-id=".*"
 
-    // Rounded corners
+// Global: Applies to all windows
+window-rule {
     geometry-corner-radius 8
     clip-to-geometry true
-
 }
-// Slightly more transparent terminals (looks nicer with blur)
+
+// Terminals: Slightly more transparent (looks nicer with blur)
 window-rule {
-    match app-id="foot|kitty|alacritty"
+    match app-id="foot"
+    match app-id="kitty"
+    match app-id="alacritty"
+    
     opacity 0.88
     background-effect {
-    	blur true
+        blur true
     }
 }
 
 // Optional: make floating dialogs cleaner
 window-rule {
-    match title=".*(Open|Save|Settings|Preferences).*"
+    match title="(?i)(Open|Save|Settings|Preferences)"
+    
     geometry-corner-radius 16
     opacity 0.95
     background-effect {
-    	blur true
+        blur true
     }
 }
 
@@ -34,9 +37,4 @@ window-rule {
 layer-rule {
     match namespace="^noctalia-wallpaper.*"
     place-within-backdrop true
-}
-
-// Optional: blur-friendly bars / overlays (if supported)
-layer-rule {
-    match namespace=".*"
 }

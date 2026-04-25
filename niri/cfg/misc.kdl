@@ -1,8 +1,13 @@
-    prefer-no-csd
+	prefer-no-csd
     screenshot-path null
 
     environment {
-        ELECTRON_OZONE_PLATFORM_HINT "auto"
+        // Fix for STM32CubeMX (Java AWT) blank/missing UI elements on Wayland
+        _JAVA_AWT_WM_NONREPARENTING "1"
+        
+        // Force Electron apps to use native Wayland instead of lagging in XWayland
+        ELECTRON_OZONE_PLATFORM_HINT "wayland"
+        
         QT_QPA_PLATFORM "wayland"
         QT_QPA_PLATFORMTHEME "gtk3"
         QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
@@ -22,4 +27,3 @@
     hotkey-overlay {
        skip-at-startup
     }
-    

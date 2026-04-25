@@ -1,9 +1,9 @@
 layout {
-    // Tightened gaps for a cleaner look
     gaps 6
     center-focused-column "never"
     always-center-single-column
     empty-workspace-above-first
+    
     default-column-display "tabbed"
     background-color "transparent"
 
@@ -24,21 +24,15 @@ layout {
     focus-ring {
         on
         width 1
-        // Darkened Moonlight Cyan (was #48cae4)
         active-color "#1a5b69"
-        // Deep Night Navy (was #2c3e50)
         inactive-color "#080d12"
-        // Deepened Magenta (was #b5179e)
         urgent-color "#5e0b52"
     }
     
-	 
     border {
         on
         width 1
-        // Darkened Ocean Blue (was #4a90e2)
         active-color "#22466e"
-        // Almost Black Navy (was #1b2735)
         inactive-color "#050a0f"
         urgent-color "#5e0b52"
     }
@@ -62,13 +56,16 @@ layout {
         position "right"
         gaps-between-tabs 2
         corner-radius 4
-        active-color "#4a90e2"
-        inactive-color "#1b2735"
-        urgent-color "#b5179e"
+        
+        // Unified with the darker border colors above
+        active-color "#22466e"
+        inactive-color "#050a0f"
+        urgent-color "#5e0b52"
     }
 
     insert-hint {
         on
-        color "#48cae480"
+        // Unified with the darker focus-ring color above (with 80 hex for 50% opacity)
+        color "#1a5b6980" 
     }
 }
