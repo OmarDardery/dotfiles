@@ -1,2 +1,4 @@
 app.zen_browser.zen/x86_64/stable
+com.github.flxzt.rnote/x86_64/stable
 com.stremio.Stremio/x86_64/stable
+it.mijorus.gearlever/x86_64/stable

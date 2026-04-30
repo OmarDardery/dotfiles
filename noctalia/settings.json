@@ -24,7 +24,8 @@
             "heroic",
             "dev.zed.Zed",
             "app.zen_browser.zen",
-            "apx-pikman-arch-linux-youtube-music"
+            "apx-pikman-arch-linux-youtube-music",
+            "com.stremio.Stremio"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
